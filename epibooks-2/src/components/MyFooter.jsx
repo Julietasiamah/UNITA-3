@@ -6,12 +6,7 @@ const MyFooter = (props) => {
       <ul className=" nav justify-content-center border-bottom pb-3 mb-3">
         <li className="nav-item">
           <a href="#" className="nav-link  px-2 text-body-secondary">
-            {props.li3}
-          </a>
-        </li>
-        <li className="nav-item">
-          <a href="#" className="nav-link  px-2 text-body-secondary">
-            {props.li4}
+            {props.li1}
           </a>
         </li>
         <li className="nav-item">
@@ -21,7 +16,12 @@ const MyFooter = (props) => {
         </li>
         <li className="nav-item">
           <a href="#" className="nav-link  px-2 text-body-secondary">
-            {props.li1}
+            {props.li3}
+          </a>
+        </li>
+        <li className="nav-item">
+          <a href="#" className="nav-link  px-2 text-body-secondary">
+            {props.li4}
           </a>
         </li>
       </ul>

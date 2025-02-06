@@ -1,24 +1,23 @@
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import MyNav from "./components/MyNav";
-import Welcome from "./components/Welcome";
-import SingleBook from "./components/SingleBook";
-import BookList from "./components/BookList";
-//import AlltheBooks from "./components/AlltheBooks";
-import romance from "../src/data/romance.json";
 import MyFooter from "./components/MyFooter";
+import Welcome from "./components/Welcome";
+// import AllTheBooks from './components/AllTheBooks'
+import { Container } from "react-bootstrap";
+import BookList from "./components/BookList";
+import fantasy from "./data/fantasy.json";
 
 function App() {
-  console.log(romance);
   return (
     <>
-      <MyNav title="Epibook" />
-
-      <Welcome description="Welcome to Epibook website!" />
-      <SingleBook book={romance[0]} />
-      <BookList books={romance} />
-
-      {/*<AlltheBooks />*/}
-      <MyFooter li1="Home" li2="Pricing" li3="Contacts" li4="Social media" />
+      <MyNav title="Epibooks" />
+      <Container>
+        <Welcome description="Welcome to Epibooks!" />
+        {/* <AllTheBooks /> */}
+        <BookList books={fantasy} />
+      </Container>
+      <MyFooter li1="Contatti" li2="Social" li3="About us" li4="Address" />
     </>
   );
 }
