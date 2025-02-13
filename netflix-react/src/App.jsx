@@ -5,6 +5,7 @@ import NewReleases from "./components/NewReleases";
 import MyFooter from "./components/MyFooter";
 import Tvshows from "./components/Tvshows";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import MovieDetails from "./components/MovieDetails";
 
 function App() {
   return (
@@ -24,6 +25,15 @@ function App() {
           ></Route>
           {/* Route path="/WatchitAgain" element={}></Route>
           <Route path="/NewReleases" element={}></Route> */}
+
+          <Route
+            path="/movie-details/:Id"
+            element={
+              <>
+                <MovieDetails />
+              </>
+            }
+          ></Route>
         </Routes>
 
         <MyFooter />
